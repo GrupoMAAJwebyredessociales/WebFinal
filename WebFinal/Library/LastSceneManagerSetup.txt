@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/mapa2.unity
+- path: Assets/AnimTest.unity
   isLoaded: 1
   isActive: 1
