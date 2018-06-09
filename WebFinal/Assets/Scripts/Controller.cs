@@ -15,7 +15,6 @@ public class Controller : MonoBehaviour
     public bool drinking;   //Beber
     public bool hold;       //Agarrar
 
-	public Cinemachine.CinemachineFreeLook cam;
     //Animaciones
     Animator anim;
     public float Countdown; //Cuenta atras para barrer
@@ -39,33 +38,16 @@ public class Controller : MonoBehaviour
 		} else {
 			anim.SetBool ("Moving", false);
 		}
-		/*
+
 		if (Input.GetKey("q")) {
 			anim.SetFloat("Rotation", -1);
 		} else if (Input.GetKey("e")) {
 			anim.SetFloat("Rotation", 1);
 		} else {
 			anim.SetFloat("Rotation", 0);
-		}*/
-
-		//Get Rotation
-		Vector3 MasterLookAt = cam.LookAt.position - cam.transform.position;
-		Vector3 LookAt = cam.LookAt.transform.rotation * cam.LookAt.transform.position;
-		Debug.Log ("MasterLookAt ->" + MasterLookAt);
-		Debug.Log ("LookAt       ->" + LookAt);
-		Debug.Log ("A            ->" + (MasterLookAt.y + LookAt.y));
-		Debug.Log ("B            ->" + (MasterLookAt.y * LookAt.y));
-		Debug.Log ("C            ->" + (MasterLookAt.y - LookAt.y));
-		Debug.Log ("D            ->" + (-MasterLookAt.y + LookAt.y));
-		/*
-		if ((MasterLookAt.y - LookAt.y) < 0) {
-			anim.SetFloat ("Rotation", -1);
-		} else if ((MasterLookAt.y - LookAt.y) > 0) {
-			anim.SetFloat ("Rotation", 1);
-		} else {
-			anim.SetFloat("Rotation", 0);
 		}
-*/
+
+
         //Coordinamos la posicion Idle
         setIdle();
 
