@@ -489,8 +489,9 @@ GameObject:
   - component: {fileID: 725355753}
   - component: {fileID: 725355752}
   - component: {fileID: 725355751}
+  - component: {fileID: 725355754}
   m_Layer: 0
-  m_Name: ControladorTiempo
+  m_Name: Controlador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -579,7 +580,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -605,6 +606,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &725355754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 725355750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc647617f3364374f937e6e297e754d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NorthDir: {x: 0, y: 0, z: 100}
+  Player: {fileID: 982986906}
+  North: {fileID: 0}
+  MissionDir: {x: 0, y: 0, z: 0, w: 0}
+  Mission: {fileID: 0}
 --- !u!1 &869491329
 GameObject:
   m_ObjectHideFlags: 0
