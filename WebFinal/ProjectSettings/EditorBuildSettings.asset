@@ -4,4 +4,22 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/escenas/Menu principal.unity
+    guid: 1d3589fdf2113e74fbdf4e0045304a62
+  - enabled: 1
+    path: Assets/escenas/mapa1.unity
+    guid: dc74a4fecdb4e2b4a999604b5a086c5f
+  - enabled: 1
+    path: Assets/escenas/mapa2.unity
+    guid: 1af8248c19afde249b7bac964975ecac
+  - enabled: 1
+    path: Assets/escenas/Contactar.unity
+    guid: 84feec6b10ab36e4e940ec46e8ca3179
+  - enabled: 1
+    path: Assets/escenas/Instrucciones.unity
+    guid: e5c42befc117f104a8b1c5a03a4777c1
+  - enabled: 1
+    path: Assets/escenas/Game Over.unity
+    guid: 00000000000000000000000000000000
