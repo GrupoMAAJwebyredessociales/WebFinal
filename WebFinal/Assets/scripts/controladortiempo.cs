@@ -7,7 +7,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 
 public class controladortiempo : MonoBehaviour {
-    float countdown = 800.0f;
+    float countdown = 300.0f;
     public int puntos = 0;
     public GameObject mapa;
     public string escena;
@@ -27,32 +27,13 @@ public class controladortiempo : MonoBehaviour {
         audio.clip= movie.audioClip;
         movie.Play();
         audio.Play();*/
-        mapa.GetComponent<Renderer>().enabled = false;
+        //mapa.GetComponent<Renderer>().enabled = false;
 
     }
 	
 	// Update is called once per frame
 	void Update () {
         countdown -= Time.deltaTime;
-
-
-
-        
-
-       
-        
-            
-            
-            
-            
-        
-
-
-
-
-
-
-
         
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -66,13 +47,16 @@ public class controladortiempo : MonoBehaviour {
 				mapa.SetActive(false);
                 pulsado = true;
             }
-            else if(pulsado==true)
+            else if((pulsado==true)&&(!pj.GetComponent<Animator>().GetBool("Moving")))
             {
                 //mapa.GetComponent<Renderer>().enabled = true;
 				mapa.SetActive(true);
                 pulsado = false;
             }
             
+        }
+        if(pj.GetComponent<Animator>().GetBool("Moving")){
+            mapa.SetActive(false);
         }
 
 
@@ -132,8 +116,9 @@ public class controladortiempo : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (!other.gameObject.CompareTag("Collectable"))
+        if (other.gameObject.CompareTag("pieces"))
         {
+            Destroy(other);
             sumarPuntos();
         }
     }
