@@ -7,10 +7,13 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 
 public class controladortiempo : MonoBehaviour {
+    float initcountdown = 300.0f;
     float countdown = 300.0f;
     public int puntos = 0;
     public GameObject mapa;
     public string escena;
+    public RectTransform TimeBar;
+    public GameObject[] Progress;
     GameObject aux;
     public GameObject pj;
     bool pulsado = false;
@@ -23,6 +26,11 @@ public class controladortiempo : MonoBehaviour {
     void Start () {
 		plano.SetActive (false);
         tocandoavion = false;
+        Progress = GameObject.FindGameObjectsWithTag("Progress");
+        foreach(GameObject g in Progress)
+        {
+            g.SetActive(false);
+        }
         /*GetComponent<RawImage>().texture = movie  as MovieTexture;
         audio.clip= movie.audioClip;
         movie.Play();
@@ -99,19 +107,28 @@ public class controladortiempo : MonoBehaviour {
 
 	public void sumarPuntos(){
 		print ("sumando punto");
+        Progress[puntos].SetActive(true);
+        Progress[puntos].GetComponent<RectTransform>().position += new Vector3(puntos * 57.5f ,0,0);
 		puntos++;
+
 	}
 
     void OnGUI()
     {
-        
-            
-         var style = new GUIStyle { fontSize = 48, fontStyle = FontStyle.Normal };
 
+
+        var style = new GUIStyle { fontSize = 48, fontStyle = FontStyle.Normal };
+        /*
         //GUI.Label(new Rect(Screen.width - Screen.width / 6, 0, Screen.width, Screen.height), "s left ",style);
-        GUI.Label(new Rect(Screen.width - Screen.width / 5, Screen.height/8, Screen.width, Screen.height), puntos.ToString() + "/8", style);
-        GUI.Label(new Rect(Screen.width-Screen.width/5, 0, 100, 100), Mathf.Round(countdown).ToString(),style);
-            GUI.color = Color.white;
+        GUI.Label(new Rect(Screen.width - Screen.width / 5, Screen.height / 8, Screen.width, Screen.height), puntos.ToString() + "/8", style);
+        GUI.Label(new Rect(Screen.width - Screen.width / 5, 0, 100, 100), Mathf.Round(countdown).ToString(), style);
+        GUI.color = Color.white;
+        */
+        GUIUpdate();
+    }
+    void GUIUpdate()
+    {
+        TimeBar.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, (countdown / initcountdown) * 100);
     }
 
     void OnTriggerEnter(Collider other)
