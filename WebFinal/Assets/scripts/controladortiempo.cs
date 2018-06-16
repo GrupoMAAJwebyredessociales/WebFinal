@@ -135,7 +135,6 @@ public class controladortiempo : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("pieces"))
         {
-            Destroy(other);
             sumarPuntos();
         }
     }

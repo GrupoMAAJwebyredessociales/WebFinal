@@ -36,7 +36,9 @@ public class Controller : MonoBehaviour
 		} else if (Input.GetAxis ("Vertical") != 0) {
 			anim.SetBool ("Moving", true);
 		} else {
+			anim.SetBool ("PickUp",false);
 			anim.SetBool ("Moving", false);
+
 		}
 
 		if (Input.GetKey("q")) {
@@ -72,7 +74,7 @@ public class Controller : MonoBehaviour
 
 		//Se asignan las variables a animator
 
-        
+
         anim.SetBool("Jump", jump);
         anim.SetFloat("Sprint", sprint);
 
@@ -96,6 +98,14 @@ public class Controller : MonoBehaviour
         }
         anim.SetFloat("idleType", idleType);
     }
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.CompareTag("pieces"))
+		{
+			Destroy (other.gameObject);
+			anim.SetBool ("PickUp",true);
+		}
+	}
 	/*
     void OnAnimatorIK()
     {
