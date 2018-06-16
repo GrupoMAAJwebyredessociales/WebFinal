@@ -5,6 +5,10 @@ using UnityEngine;
 //Mobile Controller
 using UnityStandardAssets.CrossPlatformInput;
 
+
+//Check Mobile
+using System.Runtime.InteropServices;
+
 public class Controller : MonoBehaviour
 {
     //Movimiento
@@ -27,10 +31,12 @@ public class Controller : MonoBehaviour
     {
         anim = gameObject.GetComponent<Animator>();
         idleType = 1.0f;        //Idle Inicial
+
     }
     void Update()
     {
-        if(Application.platform == RuntimePlatform.Android)
+        
+        if(SystemInfo.deviceType == DeviceType.Handheld)
         {
             anim.SetFloat("Vert", CrossPlatformInputManager.GetAxis("Vertical"));
             anim.SetFloat("Hor", CrossPlatformInputManager.GetAxis("Horizontal"));
