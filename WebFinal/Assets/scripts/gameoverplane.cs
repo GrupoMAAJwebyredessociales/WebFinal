@@ -24,8 +24,18 @@ public class gameoverplane : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            
+            Debug.Log(other.gameObject.GetType());
+            Debug.Log(other.gameObject.name);
+            Debug.Log("Error Debug");
             SceneManager.LoadScene("Game Over");
         }
     }
+    /*void OnCollisionEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Error Debug");
+            SceneManager.LoadScene("Game Over");
+        }
+    }*/
 }

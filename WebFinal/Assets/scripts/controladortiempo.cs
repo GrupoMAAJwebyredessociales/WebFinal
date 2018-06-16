@@ -70,11 +70,12 @@ public class controladortiempo : MonoBehaviour {
 
         if (countdown <= 0.0f)
         {
-
+            print("fin de la partida");
+            countdown = 0f;
             SceneManager.LoadScene("Game Over");
 
-           print("fin de la partida");
-            countdown = 0f;
+           
+            
         }
 
        
@@ -97,7 +98,6 @@ public class controladortiempo : MonoBehaviour {
 			plano.SetActive (true);
 		if ((Input.GetKey (KeyCode.Y)) && (plano.activeSelf == true)) {
 			plano.SetActive (false);
-            
 			SceneManager.LoadScene ("Game Over", LoadSceneMode.Single);
 		} else if ((Input.GetKey (KeyCode.N)) && (plano.activeSelf == true)) {
 			plano.SetActive (false);

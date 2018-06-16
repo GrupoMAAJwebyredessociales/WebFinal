@@ -1,6 +1,6 @@
 WebGL
 PlayerPath?
-C:/Users/alvar/Documents/WebFinal/WebFinal/Builds/Build2
+C:/Users/alvar/Documents/WebFinal/WebFinal/Builds/Build3(MobileSupport)
 SceneListBegin?
 Assets/escenas/Menu principal.unity
 Assets/escenas/mapa1.unity
