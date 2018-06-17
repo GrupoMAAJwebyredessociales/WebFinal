@@ -1,10 +1,4 @@
-<FilesMatch "\.(php)$">
-<IfModule mod_headers.c>
-Header set Access-Control-Allow-Origin "*"
-</IfModule>
-</FilesMatch>
-
-Header set Access-Control-Allow-Origin "*"
-Header set Access-Control-Allow-Methods "POST, GET, OPTIONS"
-Header set Access-Control-Max-Age "1000"
-Header set Access-Control-Allow-Headers "x-requested-with, Content-Type, origin, authorization, accept, client-security-token"
+"Access-Control-Allow-Credentials": "true",
+"Access-Control-Allow-Headers": "Accept, X-Access-Token, X-Application-Name, X-Request-Sent-Time",
+"Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+"Access-Control-Allow-Origin": "*",
