@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 345318938}
   - component: {fileID: 345318937}
   - component: {fileID: 345318936}
+  - component: {fileID: 345318940}
   m_Layer: 5
   m_Name: Plane
   m_TagString: Untagged
@@ -139,7 +140,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 345318934}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 854, z: 0}
   m_LocalScale: {x: 30, y: 0, z: 20}
   m_Children: []
   m_Father: {fileID: 714099907}
@@ -152,7 +153,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 345318934}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 8f4cbd3b45a6d4a45a6cf6e870543923, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 8d1d52a3b5bf8fd4180ed23a298cc420, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1931714680}
@@ -162,14 +163,14 @@ VideoPlayer:
   m_TargetMaterialProperty: _MainTex
   m_RenderMode: 1
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 1
+  m_AudioOutputMode: 0
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://github.com/GrupoMAAJwebyredessociales/WebFinal/blob/master/WebFinal/Assets/2d%20image/Inteface/Animacion%20Avion.mp4?raw=true
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -233,6 +234,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 345318934}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &345318940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 345318934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e74597f9fce96ca4ea0c6eb54e892cdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: mapa1
 --- !u!1 &714099903
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "BuildFacebook4.data.unityweb",
+"asmCodeUrl": "BuildFacebook4.asm.code.unityweb",
+"asmMemoryUrl": "BuildFacebook4.asm.memory.unityweb",
+"asmFrameworkUrl": "BuildFacebook4.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

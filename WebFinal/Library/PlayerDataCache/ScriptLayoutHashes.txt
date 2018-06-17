@@ -1,6 +1,6 @@
-WebGL
+WindowsStandalone
 PlayerPath?
-C:/Users/alvar/Documents/WebFinal/WebFinal/Builds/Build4
+C:/Users/alvar/Documents/WebFinal/WebFinal/Builds/ExeBuild/Survival_Island.exe
 SceneListBegin?
 Assets/escenas/Menu principal.unity
 Assets/escenas/mapa1.unity
@@ -10,6 +10,7 @@ Assets/escenas/Instrucciones.unity
 Assets/escenas/Game Over.unity
 Assets/escenas/Transicion1.unity
 Assets/escenas/Transicion2.unity
+Assets/escenas/Fin.unity
 SceneListEnd?
 0690f68d5dff6c6ab7000bff639cc9b4 Assembly-CSharp.dll:.gameoverplane
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -145,7 +146,7 @@ bbe78bd64b47606aaaefe668257b4375 Assembly-CSharp.dll:.Brujula
 a90e94673f50d2237c1b971c138660c6 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMoveAndRotate
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:.ForcedReset
 57fde8e76fc7bce23deb0e799d336be7 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.SmoothFollow
-e71485c16daccef4c5e58211304a8e00 Assembly-CSharp.dll:.controladortiempo
+e78fa3f6bb1d559880a5cedbe1f1443b Assembly-CSharp.dll:.controladortiempo
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.MobileControlRig
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.ObjectResetter
 b7aabf5d05ea0e1532b1c447d50f7034 Assembly-CSharp.dll:.posicionColeccionables

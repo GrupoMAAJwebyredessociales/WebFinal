@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657755, g: 0.4964127, b: 0.57481825, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657642, g: 0.49641156, b: 0.5748181, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -49160,6 +49160,16 @@ Prefab:
         type: 2}
       propertyPath: escena
       value: Transicion2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114467948214342958, guid: 16731b34cc0b96e45a40e998243e3438,
+        type: 2}
+      propertyPath: initcountdown
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 114467948214342958, guid: 16731b34cc0b96e45a40e998243e3438,
+        type: 2}
+      propertyPath: countdown
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16731b34cc0b96e45a40e998243e3438, type: 2}

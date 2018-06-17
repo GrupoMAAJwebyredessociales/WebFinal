@@ -5,7 +5,14 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 public class VideoPlay : MonoBehaviour {
 	public string nextScene;
-	void Update(){
+    private void Start()
+    {
+        if(Application.platform == RuntimePlatform.WebGLPlayer)
+        {
+            SceneManager.LoadScene(nextScene);
+        }
+    }
+    void Update(){
 		if (this.GetComponent<VideoPlayer> ().isPrepared && !this.GetComponent<VideoPlayer> ().isPlaying) {
 			SceneManager.LoadScene(nextScene);
 		}

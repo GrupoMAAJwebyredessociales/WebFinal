@@ -28,4 +28,7 @@ EditorBuildSettings:
     guid: de0b54aab737f844585c1d3017ae4cdb
   - enabled: 1
     path: Assets/escenas/Transicion2.unity
+    guid: 9fa6dc30d9547874b9e39ab41956d4f2
+  - enabled: 1
+    path: Assets/escenas/Fin.unity
     guid: 00000000000000000000000000000000

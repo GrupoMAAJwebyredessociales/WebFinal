@@ -7,8 +7,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 
 public class controladortiempo : MonoBehaviour {
-    float initcountdown = 300.0f;
-    float countdown = 300.0f;
+    public float initcountdown ;
+    public float countdown ;
     public int puntos = 0;
     public GameObject mapa;
     public string escena;
