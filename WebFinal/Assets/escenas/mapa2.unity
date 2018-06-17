@@ -126,7 +126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &67622612
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1038,11 +1038,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400016, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 2}
       propertyPath: m_FontData.m_Font
@@ -1583,6 +1583,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29631c202497e894d8d5520f9799cac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1526700148}
+  killHeight: 90
 --- !u!82 &1114667584
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2263,6 +2265,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1526700148 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1628048410378046, guid: 16731b34cc0b96e45a40e998243e3438,
+    type: 2}
+  m_PrefabInternal: {fileID: 2012514976}
 --- !u!1 &1528019735 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100014, guid: e7cdd44454d387944a8a00e4331b5e08, type: 3}
@@ -2883,7 +2890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1737509652
 RectTransform:
   m_ObjectHideFlags: 0

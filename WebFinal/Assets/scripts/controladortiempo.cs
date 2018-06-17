@@ -96,15 +96,15 @@ public class controladortiempo : MonoBehaviour {
 
 		if (Input.GetKey (KeyCode.Escape))
 			plano.SetActive (true);
-		if ((Input.GetKey (KeyCode.Y)) && (plano.activeSelf == true)) {
+		if ((Input.GetKey (KeyCode.S)) && (plano.activeSelf == true)) {
 			plano.SetActive (false);
 			SceneManager.LoadScene ("Game Over", LoadSceneMode.Single);
 		} else if ((Input.GetKey (KeyCode.N)) && (plano.activeSelf == true)) {
 			plano.SetActive (false);
-		}
-    
-	
-	}
+		} 
+
+
+    }
 
 	public void sumarPuntos(){
 		print ("sumando punto");

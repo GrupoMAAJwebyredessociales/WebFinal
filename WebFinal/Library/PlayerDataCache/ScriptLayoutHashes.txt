@@ -1,6 +1,6 @@
 WebGL
 PlayerPath?
-C:/Users/alvar/Documents/WebFinal/WebFinal/Builds/Build3(MobileSupport)
+C:/Users/alvar/Documents/WebFinal/WebFinal/Builds/Build4
 SceneListBegin?
 Assets/escenas/Menu principal.unity
 Assets/escenas/mapa1.unity
@@ -8,8 +8,10 @@ Assets/escenas/mapa2.unity
 Assets/escenas/Contactar.unity
 Assets/escenas/Instrucciones.unity
 Assets/escenas/Game Over.unity
+Assets/escenas/Transicion1.unity
+Assets/escenas/Transicion2.unity
 SceneListEnd?
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.gameoverplane
+0690f68d5dff6c6ab7000bff639cc9b4 Assembly-CSharp.dll:.gameoverplane
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 4b12dd839b2293f8457cd67cc3610b85 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -58,8 +60,6 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 8e9f5b922979e9356a11d2ee2b32ee60 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TiltInput
-05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
-05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -164,6 +164,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 2dbfd4f7836c7f6a79e17be5f4bf7969 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.WaypointCircuit
+2b009ed5d45af70a9e9cd9186acb7db5 Assembly-CSharp.dll:.VideoPlay
 3f67885e26fd23023926a93dd5559a49 Assembly-CSharp.dll:.MouseOrbitImproved
 b1f0704fc1b542c80ecf3fa1bbf472a1 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
